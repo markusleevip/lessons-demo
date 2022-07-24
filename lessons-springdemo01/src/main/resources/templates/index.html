@@ -1,0 +1,23 @@
+<html>
+
+<body>
+<table>
+    <thead>
+    <tr>
+        <th >ID</th>
+        <th >用户名</th>
+        <th >昵称</th>
+        <th >年龄</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr th:each="member: ${list}">
+        <td th:text="${member.id}"></td>
+        <td th:text="${member.userName}"></td>
+        <td th:text="${member.nickName}"></td>
+        <td th:text="${member.age}"></td>
+    </tr>
+    </tbody>
+</table>
+</body>
+</html>
